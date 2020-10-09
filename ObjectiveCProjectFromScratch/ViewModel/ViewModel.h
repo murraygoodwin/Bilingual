@@ -14,6 +14,7 @@
 
 @property Person *currentUser;
 
++ (id)shared;
 @end
 
 #endif /* ViewModel_h */

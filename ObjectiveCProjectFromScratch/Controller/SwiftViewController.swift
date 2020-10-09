@@ -13,8 +13,8 @@ final class SwiftViewController: UIViewController {
   @IBOutlet weak var passwordLabel: UILabel!
   @IBOutlet weak var loginCount: UILabel!
   @IBOutlet weak var optedInForAdsLabel: UILabel!
-  
-  var viewModel = ViewModel()
+
+  let viewModel = ViewModel.shared() as! ViewModel
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -27,9 +27,7 @@ final class SwiftViewController: UIViewController {
     passwordLabel.text = "Password: "
     loginCount.text = "Logins: "
     optedInForAdsLabel.text = "Opted in for Ads: "
-    
-    
-    //FIXME: Need to find a way to make the ViewModel a single instance rather than a separate instance...
+
     guard viewModel.currentUser != nil else {
       fatalError("Swift View Controller found an empty current user record in the ViewModel.")
     }
@@ -43,5 +41,4 @@ final class SwiftViewController: UIViewController {
   @IBAction func backButtonPressed(_ sender: UIBarButtonItem) {
     self.dismiss(animated: true, completion: nil)
   }
-  
 }
