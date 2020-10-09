@@ -35,6 +35,7 @@
   NSLog(@"Login Count: %d", newPerson.loginCount);
   NSLog(@"Opted in for ads: %d", newPerson.isOptedInForAds);
   
+  //FIXME: Need to find a way to make the ViewModel a single instance rather than a separate instance...
   ViewModel *viewModel = [[ViewModel alloc] init];
   viewModel.currentUser = newPerson;
 }

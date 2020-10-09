@@ -7,13 +7,12 @@
 
 #ifndef ViewModel_h
 #define ViewModel_h
+#import "Person.h"
+#import <Foundation/Foundation.h>
 
 @interface ViewModel : NSObject
 
-@property NSString *userID;
-@property NSString *password;
-@property int loginCount;
-@property _Bool userIsOptedInForAds;
+@property Person *currentUser;
 
 @end
 

@@ -8,6 +8,6 @@
 #import <Foundation/Foundation.h>
 #import "ViewModel.h"
 
-@implementation ViewModel:NSObject
+@implementation ViewModel : NSObject
 
 @end

@@ -7,13 +7,14 @@
 
 #ifndef Model_h
 #define Model_h
+#import <Foundation/Foundation.h>
 
 @interface Person : NSObject
 
-@property NSString *name;
-@property NSString *gender;
-@property int height;
-@property int weight;
+@property NSString *userID;
+@property NSString *password;
+@property int loginCount;
+@property _Bool isOptedInForAds;
 
 @end
 

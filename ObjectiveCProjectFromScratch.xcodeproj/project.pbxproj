@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		614FDC64253089F3000276D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC63253089F3000276D4 /* AppDelegate.m */; };
 		614FDC67253089F3000276D4 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC66253089F3000276D4 /* SceneDelegate.m */; };
-		614FDC6A253089F3000276D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC69253089F3000276D4 /* ViewController.m */; };
+		614FDC6A253089F3000276D4 /* objCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC69253089F3000276D4 /* objCViewController.m */; };
 		614FDC6D253089F3000276D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 614FDC6B253089F3000276D4 /* Main.storyboard */; };
 		614FDC6F253089F4000276D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 614FDC6E253089F4000276D4 /* Assets.xcassets */; };
 		614FDC72253089F4000276D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 614FDC70253089F4000276D4 /* LaunchScreen.storyboard */; };
 		614FDC75253089F4000276D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC74253089F4000276D4 /* main.m */; };
 		614FDC7D25308B82000276D4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC7C25308B82000276D4 /* Person.m */; };
 		614FDC8A2530934D000276D4 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC892530934D000276D4 /* ViewModel.m */; };
+		614FDC942530AE8F000276D4 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC932530AE8F000276D4 /* SwiftViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +25,8 @@
 		614FDC63253089F3000276D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		614FDC65253089F3000276D4 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		614FDC66253089F3000276D4 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		614FDC68253089F3000276D4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		614FDC69253089F3000276D4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		614FDC68253089F3000276D4 /* objCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = objCViewController.h; sourceTree = "<group>"; };
+		614FDC69253089F3000276D4 /* objCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = objCViewController.m; sourceTree = "<group>"; };
 		614FDC6C253089F3000276D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		614FDC6E253089F4000276D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		614FDC71253089F4000276D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +36,8 @@
 		614FDC8525308BC9000276D4 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		614FDC892530934D000276D4 /* ViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
 		614FDC8D25309360000276D4 /* ViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
+		614FDC922530AE8F000276D4 /* ObjectiveCProjectFromScratch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjectiveCProjectFromScratch-Bridging-Header.h"; sourceTree = "<group>"; };
+		614FDC932530AE8F000276D4 /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,7 @@
 				614FDC63253089F3000276D4 /* AppDelegate.m */,
 				614FDC65253089F3000276D4 /* SceneDelegate.h */,
 				614FDC66253089F3000276D4 /* SceneDelegate.m */,
+				614FDC982530B08A000276D4 /* Bridge */,
 				614FDC7F25308B88000276D4 /* Model */,
 				614FDC8425308B99000276D4 /* View */,
 				614FDC8825309339000276D4 /* ViewModel */,
@@ -94,8 +98,9 @@
 		614FDC8125308B8F000276D4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				614FDC68253089F3000276D4 /* ViewController.h */,
-				614FDC69253089F3000276D4 /* ViewController.m */,
+				614FDC68253089F3000276D4 /* objCViewController.h */,
+				614FDC69253089F3000276D4 /* objCViewController.m */,
+				614FDC932530AE8F000276D4 /* SwiftViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -116,6 +121,14 @@
 				614FDC892530934D000276D4 /* ViewModel.m */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		614FDC982530B08A000276D4 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				614FDC922530AE8F000276D4 /* ObjectiveCProjectFromScratch-Bridging-Header.h */,
+			);
+			path = Bridge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +161,7 @@
 				TargetAttributes = {
 					614FDC5E253089F3000276D4 = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -188,11 +202,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				614FDC8A2530934D000276D4 /* ViewModel.m in Sources */,
-				614FDC6A253089F3000276D4 /* ViewController.m in Sources */,
+				614FDC6A253089F3000276D4 /* objCViewController.m in Sources */,
 				614FDC64253089F3000276D4 /* AppDelegate.m in Sources */,
 				614FDC75253089F4000276D4 /* main.m in Sources */,
 				614FDC67253089F3000276D4 /* SceneDelegate.m in Sources */,
 				614FDC7D25308B82000276D4 /* Person.m in Sources */,
+				614FDC942530AE8F000276D4 /* SwiftViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +350,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PPKWWF5N6S;
 				INFOPLIST_FILE = ObjectiveCProjectFromScratch/Info.plist;
@@ -344,6 +360,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.murraygoodwin.ObjectiveCProjectFromScratch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjectiveCProjectFromScratch/Bridge/ObjectiveCProjectFromScratch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -353,6 +372,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PPKWWF5N6S;
 				INFOPLIST_FILE = ObjectiveCProjectFromScratch/Info.plist;
@@ -362,6 +382,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.murraygoodwin.ObjectiveCProjectFromScratch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ObjectiveCProjectFromScratch/Bridge/ObjectiveCProjectFromScratch-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
