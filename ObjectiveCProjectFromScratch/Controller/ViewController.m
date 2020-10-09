@@ -10,6 +10,7 @@
 #import "ViewModel.h"
 
 @interface ViewController ()
+- (void)createAPerson:(NSString*) newPersonName;
 
 @end
 
@@ -22,28 +23,46 @@
   self.myString = @"Murray Murray Murray";
     
 //  [self printSomeStuff];
-  [self createAPerson];
+  [self createMurray];
+  [self createAPerson: @"Tony"];
 }
-
+  
 - (void)printSomeStuff {
   NSLog(@"%d", self.myNumber);
   NSLog(@"%@", self.myString);
 }
 
-- (void)createAPerson {
+- (void)createAPerson:(NSString*) newPersonName {
+  Person *newPerson = [[Person alloc] init];
   
-  Person *murray = [[Person alloc] init];
+  newPerson.name = newPersonName;
+  newPerson.gender = @"Male";
+  newPerson.height = 181;
+  newPerson.weight = 79;
   
-  murray.name = @"Murray";
-  murray.gender = @"Male";
-  murray.height = 181;
-  murray.weight = 79;
+  NSLog(@"Successfully created %@", newPerson.name);
+  NSLog(@"%@", newPerson.gender);
+  NSLog(@"%d", newPerson.height);
+  NSLog(@"%d", newPerson.weight);
+}
   
-  NSLog(@"%@", murray.name);
-  NSLog(@"%@", murray.gender);
-  NSLog(@"%d", murray.height);
-  NSLog(@"%d", murray.weight);
+- (void)createMurray {
+  Person *newPerson = [[Person alloc] init];
+  
+  newPerson.name = @"Murray";
+  newPerson.gender = @"Male";
+  newPerson.height = 181;
+  newPerson.weight = 79;
+  
+  NSLog(@"Successfully created Murray");
+  NSLog(@"%@", newPerson.gender);
+  NSLog(@"%d", newPerson.height);
+  NSLog(@"%d", newPerson.weight);
   
 }
+
+//- (int) getNumberOfFingersAfterNastyAccident:(int) fingersToStartWith fingersLostInTheBlender: (int) fingersLost fingersLostAfterTheSharkTurnedUp: (int) fingersLostAgain {
+//  return fingersToStartWith - fingersLost - fingersLostAgain;
+//}
 
 @end
