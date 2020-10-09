@@ -12,6 +12,9 @@
 @interface ViewController ()
 - (void)createAPerson:(NSString*) newPersonName;
 
+@property (weak, nonatomic) IBOutlet UITextField *nameField;
+
+
 @end
 
 @implementation ViewController
@@ -23,7 +26,6 @@
   self.myString = @"Murray Murray Murray";
     
 //  [self printSomeStuff];
-  [self createMurray];
   [self createAPerson: @"Tony"];
 }
   
@@ -37,8 +39,8 @@
   
   newPerson.name = newPersonName;
   newPerson.gender = @"Male";
-  newPerson.height = 181;
-  newPerson.weight = 79;
+  newPerson.height = 200;
+  newPerson.weight = 80;
   
   NSLog(@"Successfully created %@", newPerson.name);
   NSLog(@"%@", newPerson.gender);
@@ -46,23 +48,10 @@
   NSLog(@"%d", newPerson.weight);
 }
   
-- (void)createMurray {
-  Person *newPerson = [[Person alloc] init];
+- (IBAction)loginButtonPressed:(UIButton *)sender {
   
-  newPerson.name = @"Murray";
-  newPerson.gender = @"Male";
-  newPerson.height = 181;
-  newPerson.weight = 79;
-  
-  NSLog(@"Successfully created Murray");
-  NSLog(@"%@", newPerson.gender);
-  NSLog(@"%d", newPerson.height);
-  NSLog(@"%d", newPerson.weight);
-  
+  [self createAPerson: self.nameField.text];
 }
 
-//- (int) getNumberOfFingersAfterNastyAccident:(int) fingersToStartWith fingersLostInTheBlender: (int) fingersLost fingersLostAfterTheSharkTurnedUp: (int) fingersLostAgain {
-//  return fingersToStartWith - fingersLost - fingersLostAgain;
-//}
 
 @end

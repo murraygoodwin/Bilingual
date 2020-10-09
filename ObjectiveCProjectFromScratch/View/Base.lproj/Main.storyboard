@@ -27,6 +27,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRp-0k-waG">
                                         <rect key="frame" x="0.0" y="54" width="374" height="34"/>
                                         <state key="normal" title="Log In"/>
+                                        <connections>
+                                            <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z5o-H4-VoU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -39,6 +42,9 @@
                             <constraint firstItem="51E-bf-6OE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="l9J-db-hfn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameField" destination="DOO-UD-6ki" id="6iq-eG-tI9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
