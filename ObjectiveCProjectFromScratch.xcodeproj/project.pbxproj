@@ -14,6 +14,8 @@
 		614FDC6F253089F4000276D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 614FDC6E253089F4000276D4 /* Assets.xcassets */; };
 		614FDC72253089F4000276D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 614FDC70253089F4000276D4 /* LaunchScreen.storyboard */; };
 		614FDC75253089F4000276D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC74253089F4000276D4 /* main.m */; };
+		614FDC7D25308B82000276D4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC7C25308B82000276D4 /* Person.m */; };
+		614FDC8A2530934D000276D4 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC892530934D000276D4 /* ViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		614FDC71253089F4000276D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		614FDC73253089F4000276D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		614FDC74253089F4000276D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		614FDC7C25308B82000276D4 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		614FDC8525308BC9000276D4 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		614FDC892530934D000276D4 /* ViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
+		614FDC8D25309360000276D4 /* ViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,15 +71,51 @@
 				614FDC63253089F3000276D4 /* AppDelegate.m */,
 				614FDC65253089F3000276D4 /* SceneDelegate.h */,
 				614FDC66253089F3000276D4 /* SceneDelegate.m */,
-				614FDC68253089F3000276D4 /* ViewController.h */,
-				614FDC69253089F3000276D4 /* ViewController.m */,
-				614FDC6B253089F3000276D4 /* Main.storyboard */,
+				614FDC7F25308B88000276D4 /* Model */,
+				614FDC8425308B99000276D4 /* View */,
+				614FDC8825309339000276D4 /* ViewModel */,
+				614FDC8125308B8F000276D4 /* Controller */,
 				614FDC6E253089F4000276D4 /* Assets.xcassets */,
-				614FDC70253089F4000276D4 /* LaunchScreen.storyboard */,
 				614FDC73253089F4000276D4 /* Info.plist */,
 				614FDC74253089F4000276D4 /* main.m */,
 			);
 			path = ObjectiveCProjectFromScratch;
+			sourceTree = "<group>";
+		};
+		614FDC7F25308B88000276D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				614FDC8525308BC9000276D4 /* Person.h */,
+				614FDC7C25308B82000276D4 /* Person.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		614FDC8125308B8F000276D4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				614FDC68253089F3000276D4 /* ViewController.h */,
+				614FDC69253089F3000276D4 /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		614FDC8425308B99000276D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				614FDC6B253089F3000276D4 /* Main.storyboard */,
+				614FDC70253089F4000276D4 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		614FDC8825309339000276D4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				614FDC8D25309360000276D4 /* ViewModel.h */,
+				614FDC892530934D000276D4 /* ViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,10 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				614FDC8A2530934D000276D4 /* ViewModel.m in Sources */,
 				614FDC6A253089F3000276D4 /* ViewController.m in Sources */,
 				614FDC64253089F3000276D4 /* AppDelegate.m in Sources */,
 				614FDC75253089F4000276D4 /* main.m in Sources */,
 				614FDC67253089F3000276D4 /* SceneDelegate.m in Sources */,
+				614FDC7D25308B82000276D4 /* Person.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
