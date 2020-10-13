@@ -9,6 +9,8 @@
 #import "Person.h"
 
 @interface objCViewController : UIViewController
+- (void)createAPerson:(NSString*) newPersonID;
+
 
 @end
 

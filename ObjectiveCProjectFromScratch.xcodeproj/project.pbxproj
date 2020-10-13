@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61067E0A2535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61067E092535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests.swift */; };
 		614FDC64253089F3000276D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC63253089F3000276D4 /* AppDelegate.m */; };
 		614FDC67253089F3000276D4 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC66253089F3000276D4 /* SceneDelegate.m */; };
 		614FDC6A253089F3000276D4 /* objCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC69253089F3000276D4 /* objCViewController.m */; };
@@ -19,7 +20,20 @@
 		614FDC942530AE8F000276D4 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC932530AE8F000276D4 /* SwiftViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		61067E0C2535AF4E00C9DBF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 614FDC57253089F3000276D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 614FDC5E253089F3000276D4;
+			remoteInfo = ObjectiveCProjectFromScratch;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		61067E072535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCProjectFromScratchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		61067E092535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveCProjectFromScratchTests.swift; sourceTree = "<group>"; };
+		61067E0B2535AF4E00C9DBF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		614FDC5F253089F3000276D4 /* ObjectiveCProjectFromScratch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCProjectFromScratch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		614FDC62253089F3000276D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		614FDC63253089F3000276D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -41,6 +55,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		61067E042535AF4E00C9DBF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		614FDC5C253089F3000276D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,10 +72,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61067E082535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests */ = {
+			isa = PBXGroup;
+			children = (
+				61067E092535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests.swift */,
+				61067E0B2535AF4E00C9DBF5 /* Info.plist */,
+			);
+			path = ObjectiveCProjectFromScratchTests;
+			sourceTree = "<group>";
+		};
 		614FDC56253089F3000276D4 = {
 			isa = PBXGroup;
 			children = (
 				614FDC61253089F3000276D4 /* ObjectiveCProjectFromScratch */,
+				61067E082535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests */,
 				614FDC60253089F3000276D4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				614FDC5F253089F3000276D4 /* ObjectiveCProjectFromScratch.app */,
+				61067E072535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,6 +166,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		61067E062535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61067E102535AF4E00C9DBF5 /* Build configuration list for PBXNativeTarget "ObjectiveCProjectFromScratchTests" */;
+			buildPhases = (
+				61067E032535AF4E00C9DBF5 /* Sources */,
+				61067E042535AF4E00C9DBF5 /* Frameworks */,
+				61067E052535AF4E00C9DBF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61067E0D2535AF4E00C9DBF5 /* PBXTargetDependency */,
+			);
+			name = ObjectiveCProjectFromScratchTests;
+			productName = ObjectiveCProjectFromScratchTests;
+			productReference = 61067E072535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		614FDC5E253089F3000276D4 /* ObjectiveCProjectFromScratch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 614FDC78253089F4000276D4 /* Build configuration list for PBXNativeTarget "ObjectiveCProjectFromScratch" */;
@@ -157,8 +207,13 @@
 		614FDC57253089F3000276D4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					61067E062535AF4E00C9DBF5 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 614FDC5E253089F3000276D4;
+					};
 					614FDC5E253089F3000276D4 = {
 						CreatedOnToolsVersion = 12.0.1;
 						LastSwiftMigration = 1200;
@@ -179,11 +234,19 @@
 			projectRoot = "";
 			targets = (
 				614FDC5E253089F3000276D4 /* ObjectiveCProjectFromScratch */,
+				61067E062535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		61067E052535AF4E00C9DBF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		614FDC5D253089F3000276D4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,6 +260,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		61067E032535AF4E00C9DBF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61067E0A2535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		614FDC5B253089F3000276D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -212,6 +283,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		61067E0D2535AF4E00C9DBF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 614FDC5E253089F3000276D4 /* ObjectiveCProjectFromScratch */;
+			targetProxy = 61067E0C2535AF4E00C9DBF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		614FDC6B253089F3000276D4 /* Main.storyboard */ = {
@@ -233,6 +312,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		61067E0E2535AF4E00C9DBF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPKWWF5N6S;
+				INFOPLIST_FILE = ObjectiveCProjectFromScratchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.murraygoodwin.ObjectiveCProjectFromScratchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObjectiveCProjectFromScratch.app/ObjectiveCProjectFromScratch";
+			};
+			name = Debug;
+		};
+		61067E0F2535AF4E00C9DBF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPKWWF5N6S;
+				INFOPLIST_FILE = ObjectiveCProjectFromScratchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.murraygoodwin.ObjectiveCProjectFromScratchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObjectiveCProjectFromScratch.app/ObjectiveCProjectFromScratch";
+			};
+			name = Release;
+		};
 		614FDC76253089F4000276D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -284,6 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "ObjectiveCProjectFromScratch/Bridge/ObjectiveCProjectFromScratch-Bridging-Header.h";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -337,6 +461,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "ObjectiveCProjectFromScratch/Bridge/ObjectiveCProjectFromScratch-Bridging-Header.h";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -391,6 +516,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		61067E102535AF4E00C9DBF5 /* Build configuration list for PBXNativeTarget "ObjectiveCProjectFromScratchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61067E0E2535AF4E00C9DBF5 /* Debug */,
+				61067E0F2535AF4E00C9DBF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		614FDC5A253089F3000276D4 /* Build configuration list for PBXProject "ObjectiveCProjectFromScratch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

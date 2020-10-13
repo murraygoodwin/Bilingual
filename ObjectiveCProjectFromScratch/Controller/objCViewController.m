@@ -10,7 +10,6 @@
 #import "ViewModel.h"
 
 @interface objCViewController ()
-- (void)createAPerson:(NSString*) newPersonID;
 
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 
