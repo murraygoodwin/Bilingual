@@ -8,9 +8,8 @@
 #import <UIKit/UIKit.h>
 #import "Person.h"
 
-@interface objCViewController : UIViewController
+@interface LoginViewController : UIViewController
 - (void)createAPerson:(NSString*) newPersonID;
-
 
 @end
 

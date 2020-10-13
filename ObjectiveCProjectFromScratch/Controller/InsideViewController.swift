@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class SwiftViewController: UIViewController {
+final class InsideViewController: UIViewController {
   
   @IBOutlet weak var userIDLabel: UILabel!
   @IBOutlet weak var passwordLabel: UILabel!

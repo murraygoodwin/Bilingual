@@ -10,14 +10,14 @@ import UIKit
 
 @testable import ObjectiveCProjectFromScratch
 
-class ObjectiveCProjectFromScratchTests: XCTestCase {
+final class LoginViewControllerTests: XCTestCase {
 
-  var sut: objCViewController!
+  var sut: LoginViewController!
   var viewModel: ViewModel!
   
   override func setUp() {
     super.setUp()
-    sut = objCViewController()
+    sut = LoginViewController()
     viewModel = ViewModel.shared() as? ViewModel
   }
   
@@ -26,5 +26,13 @@ class ObjectiveCProjectFromScratchTests: XCTestCase {
     sut.createAPerson("Spongebob")
     XCTAssertTrue(viewModel.currentUser.userID == "Spongebob")
   }
-
+  
+  // I don't know whether this is needed:... (?)
+  override func tearDown() {
+    super.tearDown()
+    viewModel.currentUser = nil
+    viewModel = nil
+    sut = nil
+  }
+  
 }

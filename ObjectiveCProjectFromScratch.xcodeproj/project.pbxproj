@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		61067E0A2535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61067E092535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests.swift */; };
+		61067E0A2535AF4E00C9DBF5 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61067E092535AF4E00C9DBF5 /* LoginViewControllerTests.swift */; };
+		61067E2E2535C16300C9DBF5 /* ObjectiveCProjectFromScratchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61067E2D2535C16300C9DBF5 /* ObjectiveCProjectFromScratchUITests.swift */; };
 		614FDC64253089F3000276D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC63253089F3000276D4 /* AppDelegate.m */; };
 		614FDC67253089F3000276D4 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC66253089F3000276D4 /* SceneDelegate.m */; };
-		614FDC6A253089F3000276D4 /* objCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC69253089F3000276D4 /* objCViewController.m */; };
+		614FDC6A253089F3000276D4 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC69253089F3000276D4 /* LoginViewController.m */; };
 		614FDC6D253089F3000276D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 614FDC6B253089F3000276D4 /* Main.storyboard */; };
 		614FDC6F253089F4000276D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 614FDC6E253089F4000276D4 /* Assets.xcassets */; };
 		614FDC72253089F4000276D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 614FDC70253089F4000276D4 /* LaunchScreen.storyboard */; };
 		614FDC75253089F4000276D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC74253089F4000276D4 /* main.m */; };
 		614FDC7D25308B82000276D4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC7C25308B82000276D4 /* Person.m */; };
 		614FDC8A2530934D000276D4 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC892530934D000276D4 /* ViewModel.m */; };
-		614FDC942530AE8F000276D4 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC932530AE8F000276D4 /* SwiftViewController.swift */; };
+		614FDC942530AE8F000276D4 /* InsideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC932530AE8F000276D4 /* InsideViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,19 +29,29 @@
 			remoteGlobalIDString = 614FDC5E253089F3000276D4;
 			remoteInfo = ObjectiveCProjectFromScratch;
 		};
+		61067E302535C16300C9DBF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 614FDC57253089F3000276D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 614FDC5E253089F3000276D4;
+			remoteInfo = ObjectiveCProjectFromScratch;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		61067E072535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCProjectFromScratchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		61067E092535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveCProjectFromScratchTests.swift; sourceTree = "<group>"; };
+		61067E092535AF4E00C9DBF5 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
 		61067E0B2535AF4E00C9DBF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61067E2B2535C16300C9DBF5 /* ObjectiveCProjectFromScratchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCProjectFromScratchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		61067E2D2535C16300C9DBF5 /* ObjectiveCProjectFromScratchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveCProjectFromScratchUITests.swift; sourceTree = "<group>"; };
+		61067E2F2535C16300C9DBF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		614FDC5F253089F3000276D4 /* ObjectiveCProjectFromScratch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCProjectFromScratch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		614FDC62253089F3000276D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		614FDC63253089F3000276D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		614FDC65253089F3000276D4 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		614FDC66253089F3000276D4 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		614FDC68253089F3000276D4 /* objCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = objCViewController.h; sourceTree = "<group>"; };
-		614FDC69253089F3000276D4 /* objCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = objCViewController.m; sourceTree = "<group>"; };
+		614FDC68253089F3000276D4 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		614FDC69253089F3000276D4 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		614FDC6C253089F3000276D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		614FDC6E253089F4000276D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		614FDC71253089F4000276D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,11 +62,18 @@
 		614FDC892530934D000276D4 /* ViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
 		614FDC8D25309360000276D4 /* ViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
 		614FDC922530AE8F000276D4 /* ObjectiveCProjectFromScratch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjectiveCProjectFromScratch-Bridging-Header.h"; sourceTree = "<group>"; };
-		614FDC932530AE8F000276D4 /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
+		614FDC932530AE8F000276D4 /* InsideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsideViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		61067E042535AF4E00C9DBF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61067E282535C16300C9DBF5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,10 +93,19 @@
 		61067E082535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests */ = {
 			isa = PBXGroup;
 			children = (
-				61067E092535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests.swift */,
+				61067E092535AF4E00C9DBF5 /* LoginViewControllerTests.swift */,
 				61067E0B2535AF4E00C9DBF5 /* Info.plist */,
 			);
 			path = ObjectiveCProjectFromScratchTests;
+			sourceTree = "<group>";
+		};
+		61067E2C2535C16300C9DBF5 /* ObjectiveCProjectFromScratchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				61067E2D2535C16300C9DBF5 /* ObjectiveCProjectFromScratchUITests.swift */,
+				61067E2F2535C16300C9DBF5 /* Info.plist */,
+			);
+			path = ObjectiveCProjectFromScratchUITests;
 			sourceTree = "<group>";
 		};
 		614FDC56253089F3000276D4 = {
@@ -86,6 +113,7 @@
 			children = (
 				614FDC61253089F3000276D4 /* ObjectiveCProjectFromScratch */,
 				61067E082535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests */,
+				61067E2C2535C16300C9DBF5 /* ObjectiveCProjectFromScratchUITests */,
 				614FDC60253089F3000276D4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,6 +123,7 @@
 			children = (
 				614FDC5F253089F3000276D4 /* ObjectiveCProjectFromScratch.app */,
 				61067E072535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests.xctest */,
+				61067E2B2535C16300C9DBF5 /* ObjectiveCProjectFromScratchUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,9 +159,9 @@
 		614FDC8125308B8F000276D4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				614FDC68253089F3000276D4 /* objCViewController.h */,
-				614FDC69253089F3000276D4 /* objCViewController.m */,
-				614FDC932530AE8F000276D4 /* SwiftViewController.swift */,
+				614FDC68253089F3000276D4 /* LoginViewController.h */,
+				614FDC69253089F3000276D4 /* LoginViewController.m */,
+				614FDC932530AE8F000276D4 /* InsideViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -184,6 +213,24 @@
 			productReference = 61067E072535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		61067E2A2535C16300C9DBF5 /* ObjectiveCProjectFromScratchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61067E322535C16300C9DBF5 /* Build configuration list for PBXNativeTarget "ObjectiveCProjectFromScratchUITests" */;
+			buildPhases = (
+				61067E272535C16300C9DBF5 /* Sources */,
+				61067E282535C16300C9DBF5 /* Frameworks */,
+				61067E292535C16300C9DBF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				61067E312535C16300C9DBF5 /* PBXTargetDependency */,
+			);
+			name = ObjectiveCProjectFromScratchUITests;
+			productName = ObjectiveCProjectFromScratchUITests;
+			productReference = 61067E2B2535C16300C9DBF5 /* ObjectiveCProjectFromScratchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		614FDC5E253089F3000276D4 /* ObjectiveCProjectFromScratch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 614FDC78253089F4000276D4 /* Build configuration list for PBXNativeTarget "ObjectiveCProjectFromScratch" */;
@@ -214,6 +261,10 @@
 						CreatedOnToolsVersion = 12.0.1;
 						TestTargetID = 614FDC5E253089F3000276D4;
 					};
+					61067E2A2535C16300C9DBF5 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 614FDC5E253089F3000276D4;
+					};
 					614FDC5E253089F3000276D4 = {
 						CreatedOnToolsVersion = 12.0.1;
 						LastSwiftMigration = 1200;
@@ -235,12 +286,20 @@
 			targets = (
 				614FDC5E253089F3000276D4 /* ObjectiveCProjectFromScratch */,
 				61067E062535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests */,
+				61067E2A2535C16300C9DBF5 /* ObjectiveCProjectFromScratchUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		61067E052535AF4E00C9DBF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61067E292535C16300C9DBF5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -264,7 +323,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61067E0A2535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests.swift in Sources */,
+				61067E0A2535AF4E00C9DBF5 /* LoginViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61067E272535C16300C9DBF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61067E2E2535C16300C9DBF5 /* ObjectiveCProjectFromScratchUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,12 +340,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				614FDC8A2530934D000276D4 /* ViewModel.m in Sources */,
-				614FDC6A253089F3000276D4 /* objCViewController.m in Sources */,
+				614FDC6A253089F3000276D4 /* LoginViewController.m in Sources */,
 				614FDC64253089F3000276D4 /* AppDelegate.m in Sources */,
 				614FDC75253089F4000276D4 /* main.m in Sources */,
 				614FDC67253089F3000276D4 /* SceneDelegate.m in Sources */,
 				614FDC7D25308B82000276D4 /* Person.m in Sources */,
-				614FDC942530AE8F000276D4 /* SwiftViewController.swift in Sources */,
+				614FDC942530AE8F000276D4 /* InsideViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +356,11 @@
 			isa = PBXTargetDependency;
 			target = 614FDC5E253089F3000276D4 /* ObjectiveCProjectFromScratch */;
 			targetProxy = 61067E0C2535AF4E00C9DBF5 /* PBXContainerItemProxy */;
+		};
+		61067E312535C16300C9DBF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 614FDC5E253089F3000276D4 /* ObjectiveCProjectFromScratch */;
+			targetProxy = 61067E302535C16300C9DBF5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -353,6 +425,48 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObjectiveCProjectFromScratch.app/ObjectiveCProjectFromScratch";
+			};
+			name = Release;
+		};
+		61067E332535C16300C9DBF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPKWWF5N6S;
+				INFOPLIST_FILE = ObjectiveCProjectFromScratchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.murraygoodwin.ObjectiveCProjectFromScratchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ObjectiveCProjectFromScratch;
+			};
+			name = Debug;
+		};
+		61067E342535C16300C9DBF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PPKWWF5N6S;
+				INFOPLIST_FILE = ObjectiveCProjectFromScratchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.murraygoodwin.ObjectiveCProjectFromScratchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ObjectiveCProjectFromScratch;
 			};
 			name = Release;
 		};
@@ -521,6 +635,15 @@
 			buildConfigurations = (
 				61067E0E2535AF4E00C9DBF5 /* Debug */,
 				61067E0F2535AF4E00C9DBF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61067E322535C16300C9DBF5 /* Build configuration list for PBXNativeTarget "ObjectiveCProjectFromScratchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61067E332535C16300C9DBF5 /* Debug */,
+				61067E342535C16300C9DBF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

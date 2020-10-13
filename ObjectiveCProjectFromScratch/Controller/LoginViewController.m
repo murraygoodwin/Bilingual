@@ -5,17 +5,17 @@
 //  Created by Murray Goodwin on 09/10/2020.
 //
 
-#import "objCViewController.h"
+#import "LoginViewController.h"
 #import "Person.h"
 #import "ViewModel.h"
 
-@interface objCViewController ()
+@interface LoginViewController()
 
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 
 @end
 
-@implementation objCViewController
+@implementation LoginViewController
 
 - (void)viewDidLoad {
   [super viewDidLoad];
