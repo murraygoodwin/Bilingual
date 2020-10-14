@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AnimatedStars
 
 final class InsideViewController: UIViewController {
   
@@ -19,6 +20,11 @@ final class InsideViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     updateUI()
+    let stars = AnimatedStars()
+    stars.animateStars(vc: self)
+    
+    let soundEngine = SoundEngine.shared
+    soundEngine.playSound(sound: "GoodNews")
   }
   
   private func updateUI() {

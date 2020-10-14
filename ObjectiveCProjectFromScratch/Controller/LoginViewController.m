@@ -9,7 +9,7 @@
 #import "Person.h"
 #import "ViewModel.h"
 
-@interface LoginViewController()
+@interface LoginViewController()<UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 
@@ -19,8 +19,14 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
+  _nameField.delegate = self;
 }
-  
+
+- (void)viewWillAppear:(BOOL)animated {
+  [super viewWillAppear:YES];
+  self.nameField.text = @"";
+}
+
 - (void)createAPerson:(NSString*) newPersonID {
   Person *newPerson = [[Person alloc] init];
   
@@ -37,9 +43,29 @@
   ViewModel *shared = [ViewModel shared];
   shared.currentUser = newPerson;
 }
-  
+
+- (BOOL)usernameIsNotBlank {
+  if ([self.nameField.text isEqual: @""]) {
+    return NO; } else {
+      return YES;
+    }
+}
+
 - (IBAction)loginButtonPressed:(UIButton *)sender {
-  [self createAPerson: self.nameField.text];
+  if ([self usernameIsNotBlank]) {
+    [self createAPerson: self.nameField.text];
+    [self performSegueWithIdentifier: @"goInside" sender:self];
+  }
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+  if ([self usernameIsNotBlank]) {
+    [self createAPerson: self.nameField.text];
+    [self performSegueWithIdentifier: @"goInside" sender:self];
+    return YES;
+  } else {
+    return NO;
+  }
 }
 
 @end
