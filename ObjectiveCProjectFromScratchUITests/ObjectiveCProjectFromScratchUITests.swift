@@ -8,7 +8,7 @@
 import XCTest
 import UIKit
 
-@testable import ObjectiveCProjectFromScratch
+@testable import Bilingual
 
 final class ObjectiveCProjectFromScratchUITests: XCTestCase {
 

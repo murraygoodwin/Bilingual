@@ -27,6 +27,7 @@
   self.nameField.text = @"";
 }
 
+#pragma mark Set the current user
 - (void)createAPerson:(NSString*) newPersonID {
   Person *newPerson = [[Person alloc] init];
   
@@ -44,6 +45,7 @@
   shared.currentUser = newPerson;
 }
 
+#pragma mark Validation and login
 - (BOOL)usernameIsNotBlank {
   if ([self.nameField.text isEqual: @""]) {
     return NO; } else {

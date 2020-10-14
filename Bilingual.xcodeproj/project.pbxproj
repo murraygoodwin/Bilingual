@@ -42,13 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		61067E072535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCProjectFromScratchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		61067E072535AF4E00C9DBF5 /* BilingualTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BilingualTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61067E092535AF4E00C9DBF5 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
 		61067E0B2535AF4E00C9DBF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		61067E2B2535C16300C9DBF5 /* ObjectiveCProjectFromScratchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCProjectFromScratchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		61067E2B2535C16300C9DBF5 /* BilingualUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BilingualUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61067E2D2535C16300C9DBF5 /* ObjectiveCProjectFromScratchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveCProjectFromScratchUITests.swift; sourceTree = "<group>"; };
 		61067E2F2535C16300C9DBF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		614FDC5F253089F3000276D4 /* ObjectiveCProjectFromScratch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectiveCProjectFromScratch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		614FDC5F253089F3000276D4 /* Bilingual.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bilingual.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		614FDC62253089F3000276D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		614FDC63253089F3000276D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		614FDC65253089F3000276D4 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
@@ -129,9 +129,9 @@
 		614FDC60253089F3000276D4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				614FDC5F253089F3000276D4 /* ObjectiveCProjectFromScratch.app */,
-				61067E072535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests.xctest */,
-				61067E2B2535C16300C9DBF5 /* ObjectiveCProjectFromScratchUITests.xctest */,
+				614FDC5F253089F3000276D4 /* Bilingual.app */,
+				61067E072535AF4E00C9DBF5 /* BilingualTests.xctest */,
+				61067E2B2535C16300C9DBF5 /* BilingualUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,9 +213,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		61067E062535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests */ = {
+		61067E062535AF4E00C9DBF5 /* BilingualTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 61067E102535AF4E00C9DBF5 /* Build configuration list for PBXNativeTarget "ObjectiveCProjectFromScratchTests" */;
+			buildConfigurationList = 61067E102535AF4E00C9DBF5 /* Build configuration list for PBXNativeTarget "BilingualTests" */;
 			buildPhases = (
 				61067E032535AF4E00C9DBF5 /* Sources */,
 				61067E042535AF4E00C9DBF5 /* Frameworks */,
@@ -226,14 +226,14 @@
 			dependencies = (
 				61067E0D2535AF4E00C9DBF5 /* PBXTargetDependency */,
 			);
-			name = ObjectiveCProjectFromScratchTests;
+			name = BilingualTests;
 			productName = ObjectiveCProjectFromScratchTests;
-			productReference = 61067E072535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests.xctest */;
+			productReference = 61067E072535AF4E00C9DBF5 /* BilingualTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		61067E2A2535C16300C9DBF5 /* ObjectiveCProjectFromScratchUITests */ = {
+		61067E2A2535C16300C9DBF5 /* BilingualUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 61067E322535C16300C9DBF5 /* Build configuration list for PBXNativeTarget "ObjectiveCProjectFromScratchUITests" */;
+			buildConfigurationList = 61067E322535C16300C9DBF5 /* Build configuration list for PBXNativeTarget "BilingualUITests" */;
 			buildPhases = (
 				61067E272535C16300C9DBF5 /* Sources */,
 				61067E282535C16300C9DBF5 /* Frameworks */,
@@ -244,14 +244,14 @@
 			dependencies = (
 				61067E312535C16300C9DBF5 /* PBXTargetDependency */,
 			);
-			name = ObjectiveCProjectFromScratchUITests;
+			name = BilingualUITests;
 			productName = ObjectiveCProjectFromScratchUITests;
-			productReference = 61067E2B2535C16300C9DBF5 /* ObjectiveCProjectFromScratchUITests.xctest */;
+			productReference = 61067E2B2535C16300C9DBF5 /* BilingualUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		614FDC5E253089F3000276D4 /* ObjectiveCProjectFromScratch */ = {
+		614FDC5E253089F3000276D4 /* Bilingual */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 614FDC78253089F4000276D4 /* Build configuration list for PBXNativeTarget "ObjectiveCProjectFromScratch" */;
+			buildConfigurationList = 614FDC78253089F4000276D4 /* Build configuration list for PBXNativeTarget "Bilingual" */;
 			buildPhases = (
 				614FDC5B253089F3000276D4 /* Sources */,
 				614FDC5C253089F3000276D4 /* Frameworks */,
@@ -261,12 +261,12 @@
 			);
 			dependencies = (
 			);
-			name = ObjectiveCProjectFromScratch;
+			name = Bilingual;
 			packageProductDependencies = (
 				615779462535ED9000CE5A73 /* AnimatedStars */,
 			);
 			productName = ObjectiveCProjectFromScratch;
-			productReference = 614FDC5F253089F3000276D4 /* ObjectiveCProjectFromScratch.app */;
+			productReference = 614FDC5F253089F3000276D4 /* Bilingual.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -292,7 +292,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 614FDC5A253089F3000276D4 /* Build configuration list for PBXProject "ObjectiveCProjectFromScratch" */;
+			buildConfigurationList = 614FDC5A253089F3000276D4 /* Build configuration list for PBXProject "Bilingual" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -305,9 +305,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				614FDC5E253089F3000276D4 /* ObjectiveCProjectFromScratch */,
-				61067E062535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests */,
-				61067E2A2535C16300C9DBF5 /* ObjectiveCProjectFromScratchUITests */,
+				614FDC5E253089F3000276D4 /* Bilingual */,
+				61067E062535AF4E00C9DBF5 /* BilingualTests */,
+				61067E2A2535C16300C9DBF5 /* BilingualUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -377,12 +377,12 @@
 /* Begin PBXTargetDependency section */
 		61067E0D2535AF4E00C9DBF5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 614FDC5E253089F3000276D4 /* ObjectiveCProjectFromScratch */;
+			target = 614FDC5E253089F3000276D4 /* Bilingual */;
 			targetProxy = 61067E0C2535AF4E00C9DBF5 /* PBXContainerItemProxy */;
 		};
 		61067E312535C16300C9DBF5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 614FDC5E253089F3000276D4 /* ObjectiveCProjectFromScratch */;
+			target = 614FDC5E253089F3000276D4 /* Bilingual */;
 			targetProxy = 61067E302535C16300C9DBF5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -425,7 +425,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObjectiveCProjectFromScratch.app/ObjectiveCProjectFromScratch";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bilingual.app/Bilingual";
 			};
 			name = Debug;
 		};
@@ -447,7 +447,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObjectiveCProjectFromScratch.app/ObjectiveCProjectFromScratch";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bilingual.app/Bilingual";
 			};
 			name = Release;
 		};
@@ -653,7 +653,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		61067E102535AF4E00C9DBF5 /* Build configuration list for PBXNativeTarget "ObjectiveCProjectFromScratchTests" */ = {
+		61067E102535AF4E00C9DBF5 /* Build configuration list for PBXNativeTarget "BilingualTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				61067E0E2535AF4E00C9DBF5 /* Debug */,
@@ -662,7 +662,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		61067E322535C16300C9DBF5 /* Build configuration list for PBXNativeTarget "ObjectiveCProjectFromScratchUITests" */ = {
+		61067E322535C16300C9DBF5 /* Build configuration list for PBXNativeTarget "BilingualUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				61067E332535C16300C9DBF5 /* Debug */,
@@ -671,7 +671,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		614FDC5A253089F3000276D4 /* Build configuration list for PBXProject "ObjectiveCProjectFromScratch" */ = {
+		614FDC5A253089F3000276D4 /* Build configuration list for PBXProject "Bilingual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				614FDC76253089F4000276D4 /* Debug */,
@@ -680,7 +680,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		614FDC78253089F4000276D4 /* Build configuration list for PBXNativeTarget "ObjectiveCProjectFromScratch" */ = {
+		614FDC78253089F4000276D4 /* Build configuration list for PBXNativeTarget "Bilingual" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				614FDC79253089F4000276D4 /* Debug */,
