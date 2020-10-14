@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		61067E0A2535AF4E00C9DBF5 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61067E092535AF4E00C9DBF5 /* LoginViewControllerTests.swift */; };
-		61067E2E2535C16300C9DBF5 /* ObjectiveCProjectFromScratchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61067E2D2535C16300C9DBF5 /* ObjectiveCProjectFromScratchUITests.swift */; };
+		612596BE25372C7F00F6BBC4 /* ObjectiveCProjectFromScratchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61067E2D2535C16300C9DBF5 /* ObjectiveCProjectFromScratchUITests.swift */; };
+		612596C525372C8400F6BBC4 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61067E092535AF4E00C9DBF5 /* LoginViewControllerTests.swift */; };
 		614FDC64253089F3000276D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC63253089F3000276D4 /* AppDelegate.m */; };
 		614FDC67253089F3000276D4 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC66253089F3000276D4 /* SceneDelegate.m */; };
 		614FDC6A253089F3000276D4 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC69253089F3000276D4 /* LoginViewController.m */; };
@@ -345,7 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61067E0A2535AF4E00C9DBF5 /* LoginViewControllerTests.swift in Sources */,
+				612596C525372C8400F6BBC4 /* LoginViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61067E2E2535C16300C9DBF5 /* ObjectiveCProjectFromScratchUITests.swift in Sources */,
+				612596BE25372C7F00F6BBC4 /* ObjectiveCProjectFromScratchUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,11 +464,12 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.murraygoodwin.ObjectiveCProjectFromScratchUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ObjectiveCProjectFromScratch;
+				TEST_TARGET_NAME = Bilingual;
 			};
 			name = Debug;
 		};
@@ -485,11 +486,12 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.murraygoodwin.ObjectiveCProjectFromScratchUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ObjectiveCProjectFromScratch;
+				TEST_TARGET_NAME = Bilingual;
 			};
 			name = Release;
 		};

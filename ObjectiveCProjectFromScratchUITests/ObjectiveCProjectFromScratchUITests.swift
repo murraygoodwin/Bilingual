@@ -12,15 +12,16 @@ import UIKit
 
 final class ObjectiveCProjectFromScratchUITests: XCTestCase {
 
+  let app = XCUIApplication()
+  
   override class func setUp() {
     super.setUp()
+    
   }
   
+  // FIXME: This is a little inefficient as this test gets run twice.
   func testUpdatingUserIDLabel() {
-    
-    let app = XCUIApplication()
     app.launch()
-    
     let userNameTextField = app.textFields["userNameTextField"]
     let loginButton = app.buttons["loginButton"]
     let testUserName = "Guybrush"
@@ -33,6 +34,17 @@ final class ObjectiveCProjectFromScratchUITests: XCTestCase {
     
     let userNameLabelText = app.staticTexts["userNameLabel"].label
     XCTAssertTrue(userNameLabelText == "UserID: " + testUserName)
-
   }
+  
+  func testloggingOutReturnsToLoginViewController() {
+    
+    testUpdatingUserIDLabel()
+    
+    let logoutButton = app.navigationBars.buttons["logoutButton"]
+    let bilingualLogo = app.images["bilingualLogo"]
+    
+    logoutButton.tap()
+    XCTAssertTrue(bilingualLogo.exists)
+      }
+  
 }
