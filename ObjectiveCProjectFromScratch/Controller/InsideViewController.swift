@@ -27,8 +27,8 @@ final class InsideViewController: UIViewController {
     soundEngine.playSound(sound: "GoodNews")
   }
   
+  // MARK: - UI Updates
   private func updateUI() {
-    
     userIDLabel.text = "UserID: "
     passwordLabel.text = "Password: "
     loginCount.text = "Logins: "
@@ -44,6 +44,7 @@ final class InsideViewController: UIViewController {
     optedInForAdsLabel.text = "Opted in for Ads: " + String(Bool(viewModel.currentUser.isOptedInForAds))
   }
   
+  // MARK: - Navigation
   @IBAction func backButtonPressed(_ sender: UIBarButtonItem) {
     self.dismiss(animated: true, completion: nil)
   }

@@ -12,14 +12,13 @@ import AVFoundation
 class SoundEngine {
   
   static let shared = SoundEngine()
+  var soundPlayer: AVAudioPlayer!
+  
+  func playSound(sound: String) {
     
-    var soundPlayer: AVAudioPlayer!
-
-    func playSound(sound: String) {
-        
-            let url = Bundle.main.url(forResource: sound, withExtension: "wav")
-            soundPlayer = try! AVAudioPlayer(contentsOf: url!)
-            soundPlayer.play()
+    if let url = Bundle.main.url(forResource: sound, withExtension: "wav") {
+      soundPlayer = try? AVAudioPlayer(contentsOf: url)
+      soundPlayer.play()
     }
-    
+  }
 }
