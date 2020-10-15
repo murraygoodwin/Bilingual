@@ -19,9 +19,9 @@
 		614FDC7D25308B82000276D4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC7C25308B82000276D4 /* Person.m */; };
 		614FDC8A2530934D000276D4 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC892530934D000276D4 /* ViewModel.m */; };
 		614FDC942530AE8F000276D4 /* InsideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614FDC932530AE8F000276D4 /* InsideViewController.swift */; };
-		615779472535ED9000CE5A73 /* AnimatedStars in Frameworks */ = {isa = PBXBuildFile; productRef = 615779462535ED9000CE5A73 /* AnimatedStars */; };
 		6173D21A2537148C006E75E6 /* SoundEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6173D2192537148C006E75E6 /* SoundEngine.swift */; };
 		6173D2202537159C006E75E6 /* GoodNews.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6173D21F2537159C006E75E6 /* GoodNews.wav */; };
+		61EA2B5A253881C000C13EE8 /* AnimatedStars in Frameworks */ = {isa = PBXBuildFile; productRef = 61EA2B59253881C000C13EE8 /* AnimatedStars */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +66,6 @@
 		614FDC8D25309360000276D4 /* ViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
 		614FDC922530AE8F000276D4 /* ObjectiveCProjectFromScratch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjectiveCProjectFromScratch-Bridging-Header.h"; sourceTree = "<group>"; };
 		614FDC932530AE8F000276D4 /* InsideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsideViewController.swift; sourceTree = "<group>"; };
-		615779422535ED2E00CE5A73 /* AnimatedStars */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AnimatedStars; path = "../../../Learning Swift/AnimatedStars"; sourceTree = "<group>"; };
 		6173D2192537148C006E75E6 /* SoundEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEngine.swift; sourceTree = "<group>"; };
 		6173D21F2537159C006E75E6 /* GoodNews.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GoodNews.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				615779472535ED9000CE5A73 /* AnimatedStars in Frameworks */,
+				61EA2B5A253881C000C13EE8 /* AnimatedStars in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +117,6 @@
 		614FDC56253089F3000276D4 = {
 			isa = PBXGroup;
 			children = (
-				615779422535ED2E00CE5A73 /* AnimatedStars */,
 				614FDC61253089F3000276D4 /* ObjectiveCProjectFromScratch */,
 				61067E082535AF4E00C9DBF5 /* ObjectiveCProjectFromScratchTests */,
 				61067E2C2535C16300C9DBF5 /* ObjectiveCProjectFromScratchUITests */,
@@ -263,7 +261,7 @@
 			);
 			name = Bilingual;
 			packageProductDependencies = (
-				615779462535ED9000CE5A73 /* AnimatedStars */,
+				61EA2B59253881C000C13EE8 /* AnimatedStars */,
 			);
 			productName = ObjectiveCProjectFromScratch;
 			productReference = 614FDC5F253089F3000276D4 /* Bilingual.app */;
@@ -301,6 +299,9 @@
 				Base,
 			);
 			mainGroup = 614FDC56253089F3000276D4;
+			packageReferences = (
+				61EA2B58253881C000C13EE8 /* XCRemoteSwiftPackageReference "AnimatedStars" */,
+			);
 			productRefGroup = 614FDC60253089F3000276D4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -693,9 +694,21 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		61EA2B58253881C000C13EE8 /* XCRemoteSwiftPackageReference "AnimatedStars" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/murraygoodwin/AnimatedStars.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		615779462535ED9000CE5A73 /* AnimatedStars */ = {
+		61EA2B59253881C000C13EE8 /* AnimatedStars */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 61EA2B58253881C000C13EE8 /* XCRemoteSwiftPackageReference "AnimatedStars" */;
 			productName = AnimatedStars;
 		};
 /* End XCSwiftPackageProductDependency section */
