@@ -13,7 +13,6 @@
 @interface ViewModel : NSObject
 
 @property Person *currentUser;
-+ (id)shared;
 
 @end
 

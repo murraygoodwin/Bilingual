@@ -7,9 +7,11 @@
 
 #import <UIKit/UIKit.h>
 #import "Person.h"
+#import "ViewModel.h"
 
 @interface LoginViewController : UIViewController
 - (void)createAPerson:(NSString*) newPersonID;
+@property ViewModel* viewModel;
 
 @end
 

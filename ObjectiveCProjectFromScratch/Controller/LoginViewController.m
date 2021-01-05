@@ -8,6 +8,7 @@
 #import "LoginViewController.h"
 #import "Person.h"
 #import "ViewModel.h"
+#import "Bilingual-Swift.h"
 
 @interface LoginViewController()<UITextFieldDelegate>
 
@@ -41,8 +42,10 @@
   NSLog(@"Login Count: %d", newPerson.loginCount);
   NSLog(@"Opted in for ads: %d", newPerson.isOptedInForAds);
   
-  ViewModel *shared = [ViewModel shared];
-  shared.currentUser = newPerson;
+  ViewModel *viewModel = [[ViewModel alloc] init];
+  _viewModel = viewModel;
+  _viewModel.currentUser = newPerson;
+  NSLog(@"User set in the ViewModel as: %@", _viewModel.currentUser.userID);
 }
 
 #pragma mark Validation and login
@@ -68,6 +71,16 @@
   } else {
     return NO;
   }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+  if ([segue.identifier isEqual: @"goInside"]) {
+
+    UINavigationController *destinationNavigationController = [segue destinationViewController];
+    InsideViewController *destinationViewController = (InsideViewController *)([destinationNavigationController viewControllers][0]);
+    destinationViewController.viewModel = _viewModel;
+ }
 }
 
 @end

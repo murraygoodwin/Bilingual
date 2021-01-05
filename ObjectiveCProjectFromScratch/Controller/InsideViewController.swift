@@ -15,7 +15,7 @@ final class InsideViewController: UIViewController {
   @IBOutlet weak var loginCount: UILabel!
   @IBOutlet weak var optedInForAdsLabel: UILabel!
 
-  let viewModel = ViewModel.shared() as! ViewModel
+  @objc var viewModel: ViewModel?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -33,6 +33,8 @@ final class InsideViewController: UIViewController {
     passwordLabel.text = "Password: "
     loginCount.text = "Logins: "
     optedInForAdsLabel.text = "Opted in for Ads: "
+    
+    guard let viewModel = viewModel else { fatalError("No ViewModel available.") }
 
     guard viewModel.currentUser != nil else {
       fatalError("Swift View Controller found an empty current user record in the ViewModel.")
