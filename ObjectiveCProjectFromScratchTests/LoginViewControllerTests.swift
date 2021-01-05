@@ -18,20 +18,20 @@ final class LoginViewControllerTests: XCTestCase {
   override func setUp() {
     super.setUp()
     sut = LoginViewController()
-    viewModel = ViewModel.shared() as? ViewModel
+    sut.viewModel = ViewModel()
   }
   
   func testCheckTheViewModelIsUpdatedWhenAUsernameIsSubmitted() {
-    viewModel.currentUser = nil
+    sut.viewModel.currentUser = nil
     sut.createAPerson("Spongebob")
-    XCTAssertTrue(viewModel.currentUser.userID == "Spongebob")
+    XCTAssertTrue(sut.viewModel.currentUser.userID == "Spongebob")
   }
   
   // I don't know whether this is needed:... (?)
   override func tearDown() {
     super.tearDown()
-    viewModel.currentUser = nil
-    viewModel = nil
+    sut.viewModel.currentUser = nil
+    sut.viewModel = nil
     sut = nil
   }
   
